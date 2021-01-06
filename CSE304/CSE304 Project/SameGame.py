@@ -96,11 +96,14 @@ def printGame(samegame):
             n += 1
         print(
             Items[samegame.gameArray[i]],
-            end=' \n' if i % samegame.w == (samegame.w - 1) else '  '
+            end=' \n' if i % samegame.w == (samegame.w - 1) else '   '
         )
     print('  ', end='')
     for i in range(samegame.w):
-        print('{}  '.format(i), end='')
+        if i >=10:
+            print('{}  '.format(i),end='')
+        elif i<=9:
+            print('{}   '.format(i), end='')
 
     print('\n score:{}'.format(samegame.score))
     if(samegame.gameArray[181]== Items[0]):

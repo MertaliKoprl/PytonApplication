@@ -1,0 +1,1 @@
+Excel dosyasını colabın içine koydum dolayısıyla çalıştırmak için colaba eklemelisin :)
